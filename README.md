@@ -117,6 +117,36 @@ def printListElements(lst):
     
         print(element)
 
+
 In this case, the algorithm has a linear time complexity of O(n) because it iterates through each element in the list exactly once. As the size of the list increases, the running time of the algorithm will grow linearly.
 
 It's worth noting that O(n) only describes the growth rate of the algorithm's running time in the worst-case scenario. It does not provide information about the actual running time or constant factors involved.
+
+In computer science, the term "O(log n)" refers to the time complexity of an algorithm, indicating that the running time of the algorithm grows logarithmically with the size of the input. The "O" stands for "order of," and "log n" represents the logarithm base 2 of the input size.
+
+An algorithm with O(log n) complexity means that as the input size increases, the running time of the algorithm increases at a slower rate compared to linear growth. In other words, as the input size doubles, the running time of the algorithm increases by a constant factor, rather than doubling.
+
+To better understand this, let's consider an example of a binary search algorithm:
+
+def binarySearch(arr, target):
+
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    
+    return -1
+
+In this case, the binary search algorithm has a time complexity of O(log n). It divides the search space in half at each step, effectively eliminating half of the remaining elements with each iteration. As a result, it can quickly narrow down the search to the desired element.
+
+This logarithmic time complexity is beneficial for large inputs because the running time grows much slower than linear algorithms, making it efficient for searching, sorting, and other operations on sorted or partially sorted data.
+
+Again, it's important to note that O(log n) describes the growth rate of the algorithm's running time in the worst-case scenario. The actual running time and constant factors involved may vary.
+
