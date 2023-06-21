@@ -102,3 +102,21 @@ Arrays and linked lists are both data structures used for organizing and storing
 > Arrays: Arrays can be more memory-efficient in some cases because they don't require extra memory for storing references between elements.
 
 > Linked Lists: Linked lists use additional memory to store the references between nodes, which can be inefficient in terms of memory usage.
+
+# O(n) complexity or Linear Search
+
+In computer science, the term "O(n)" refers to the time complexity of an algorithm, indicating that the running time of the algorithm grows linearly with the size of the input. The "O" stands for "order of," and "n" represents the input size.
+
+An algorithm with O(n) complexity means that as the input size increases, the algorithm's running time increases proportionally. In other words, if the input size doubles, the running time of the algorithm will also approximately double.
+
+To illustrate this, let's consider a simple example. Suppose we have an algorithm that prints all the elements in a list of size n:
+
+def printListElements(lst):
+
+    for element in lst:
+    
+        print(element)
+
+In this case, the algorithm has a linear time complexity of O(n) because it iterates through each element in the list exactly once. As the size of the list increases, the running time of the algorithm will grow linearly.
+
+It's worth noting that O(n) only describes the growth rate of the algorithm's running time in the worst-case scenario. It does not provide information about the actual running time or constant factors involved.
