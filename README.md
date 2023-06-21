@@ -122,6 +122,7 @@ In this case, the algorithm has a linear time complexity of O(n) because it iter
 
 It's worth noting that O(n) only describes the growth rate of the algorithm's running time in the worst-case scenario. It does not provide information about the actual running time or constant factors involved.
 
+# O(log n)  complexity
 In computer science, the term "O(log n)" refers to the time complexity of an algorithm, indicating that the running time of the algorithm grows logarithmically with the size of the input. The "O" stands for "order of," and "log n" represents the logarithm base 2 of the input size.
 
 An algorithm with O(log n) complexity means that as the input size increases, the running time of the algorithm increases at a slower rate compared to linear growth. In other words, as the input size doubles, the running time of the algorithm increases by a constant factor, rather than doubling.
