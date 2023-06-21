@@ -151,3 +151,38 @@ This logarithmic time complexity is beneficial for large inputs because the runn
 
 Again, it's important to note that O(log n) describes the growth rate of the algorithm's running time in the worst-case scenario. The actual running time and constant factors involved may vary.
 
+# O(n^2) Complexity Bubble Sort
+
+In computer science, the term "O(n^2)" (pronounced "O of n squared") refers to the time complexity of an algorithm, indicating that the running time of the algorithm grows quadratically with the size of the input. The "O" stands for "order of," and "n^2" represents the square of the input size.
+
+An algorithm with O(n^2) complexity means that as the input size increases, the running time of the algorithm increases quadratically. In other words, if the input size doubles, the running time of the algorithm will approximately quadruple.
+
+The time complexity of the Bubble Sort algorithm in C# is the same as in any other programming language. It has a worst-case and average-case time complexity of O(n^2), where 'n' represents the number of elements in the input array.
+
+Here's an example implementation of the Bubble Sort algorithm in C#:
+
+public static void BubbleSort(int[] arr)
+
+{
+
+    int n = arr.Length;
+    for (int i = 0; i < n - 1; i++)
+    
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        
+        {
+            if (arr[j] > arr[j + 1])
+            
+            {
+                // Swap arr[j] and arr[j+1]
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    
+}
+
+
