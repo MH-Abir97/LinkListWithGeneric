@@ -25,9 +25,12 @@ using System.Collections.Generic;
 class Program
 {
     static void Main()
+    
     {
+    
         // Creating a linked list
         LinkedList<string> linkedList = new LinkedList<string>();
+        
 
         // Adding elements to the linked list
         linkedList.AddLast("Apple");
