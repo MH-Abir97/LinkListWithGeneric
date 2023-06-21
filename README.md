@@ -16,7 +16,7 @@ Functionality and Flexibility:
 
 3. Linked List: Linked lists are suitable when you frequently need to add or remove elements at arbitrary positions within the list. They are flexible and allow dynamic resizing without requiring contiguous memory allocation.
 
-3.Collection: Collections offer a wide range of functionality depending on the type. They may support sorting, searching, filtering, enumeration, conversion, and other operations specific to the data structure they represent. Collections can also provide type safety through generics.
+3. Collection: Collections offer a wide range of functionality depending on the type. They may support sorting, searching, filtering, enumeration, conversion, and other operations specific to the data structure they represent. Collections can also provide type safety through generics.
 In summary, a linked list is a specific type of data structure that provides efficient insertion and deletion but requires traversal for accessing specific elements. On the other hand, a collection is a general concept representing a group of objects, and it encompasses various data structures with different performance characteristics and functionality. Linked lists can be one of the implementations used within a collection or used independently as a standalone data structure.
 
 # Linklist example
