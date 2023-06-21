@@ -185,4 +185,82 @@ public static void BubbleSort(int[] arr)
     
 }
 
+# O(n log n)  complexity in C#
+I assume you meant "merge sort." The Merge Sort algorithm is a comparison-based sorting algorithm that follows the divide-and-conquer approach. It has a time complexity of O(n log n) in the worst-case and average-case scenarios.
+
+Here's an example implementation of the Merge Sort algorithm in C#:
+
+public static void SomeAlgorithm(int[] arr)
+
+{
+
+    // Base case: If the array size is 1 or less, return
+    if (arr.Length <= 1)
+        return;
+
+    // Divide the array into two halves
+    int mid = arr.Length / 2;
+    int[] left = new int[mid];
+    int[] right = new int[arr.Length - mid];
+
+    Array.Copy(arr, 0, left, 0, mid);
+    Array.Copy(arr, mid, right, 0, arr.Length - mid);
+
+    // Recursive calls on the divided halves
+    SomeAlgorithm(left);
+    SomeAlgorithm(right);
+
+    // Merge the sorted halves
+    Merge(arr, left, right);
+}
+
+private static void Merge(int[] arr, int[] left, int[] right)
+
+{
+
+    int i = 0, j = 0, k = 0;
+
+    while (i < left.Length && j < right.Length)
+    {
+    
+        if (left[i] <= right[j])
+        {
+            arr[k] = left[i];
+            i++;
+        }
+        else
+        {
+            arr[k] = right[j];
+            j++;
+        }
+        k++;
+    }
+
+    // Copy the remaining elements of left[] if any
+    while (i < left.Length)
+    
+    {
+    
+        arr[k] = left[i];
+        i++;
+        k++;
+    }
+
+    // Copy the remaining elements of right[] if any
+    while (j < right.Length)
+    
+    {
+    
+        arr[k] = right[j];
+        j++;
+        k++;
+    }
+}
+
+
+In this example, the SomeAlgorithm function represents an algorithm with a time complexity of O(n log n). The algorithm uses a divide-and-conquer approach by recursively dividing the input array into two halves until each half contains only one element. Then, it merges the sorted halves using the Merge function, which has a linear time complexity of O(n). The overall time complexity is determined by the number of divisions, which follows a logarithmic pattern, resulting in O(n log n) complexity.
+
+Please note that this is a generalized example to demonstrate the concept of O(n log n) complexity. The specific implementation details and behavior may vary depending on the actual algorithm you are working with.
+
+
 
