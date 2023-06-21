@@ -77,9 +77,9 @@ Arrays and linked lists are both data structures used for organizing and storing
 
 1. Memory Allocation:
 
-i. Arrays: Arrays allocate contiguous blocks of memory to store elements. The elements are stored one after another in memory, allowing for efficient random access by index.
+> Arrays: Arrays allocate contiguous blocks of memory to store elements. The elements are stored one after another in memory, allowing for efficient random access by index.
 
-ii. Linked Lists: Linked lists do not require contiguous memory allocation. Instead, each element (node) in a linked list contains a value and a reference to the next node, forming a chain-like structure. Nodes can be scattered in memory.
+> Linked Lists: Linked lists do not require contiguous memory allocation. Instead, each element (node) in a linked list contains a value and a reference to the next node, forming a chain-like structure. Nodes can be scattered in memory.
 
 2. Insertion and Deletion:
 
